@@ -50,7 +50,7 @@ export default function Navbar({ theme, toggleTheme }) {
       {menuOpen && (
         <div className="mobile-menu">
           {["about", "skills", "projects", "contact"].map((s) => (
-            
+            <a
               key={s}
               href={`#${s}`}
               className="mobile-menu__link"
