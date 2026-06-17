@@ -13,8 +13,8 @@ export default function Projects() {
               <div className="project-card__header">
                 <span className="project-card__icon">{project.icon}</span>
                 <div className="project-card__links">
-                  <a href={project.github} className="proj-link">GitHub ↗</a>
-                  <a href={project.live} className="proj-link">Live ↗</a>
+                  <a href={project.github} target="_blank" rel="noreferrer" className="proj-link">GitHub ↗</a>
+                  <a href={project.live} target="_blank" rel="noreferrer" className="proj-link">Live ↗</a>
                 </div>
               </div>
               <h3 className="project-card__title">{project.title}</h3>
