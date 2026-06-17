@@ -19,7 +19,7 @@ export default function Contact() {
               ✉ {personal.email}
             </a>
             <a href={personal.github} target="_blank" rel="noreferrer" className="contact-link">
-              🐙 github.com/fritz
+              🐙 https://github.com/forensickchemist
             </a>
             <a href={personal.linkedin} target="_blank" rel="noreferrer" className="contact-link">
               👤 LinkedIn
