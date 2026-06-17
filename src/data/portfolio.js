@@ -45,8 +45,8 @@ export const projects = [
     description:
       "A live tip calculator that splits bills across multiple people. Built with vanilla JS, demonstrating DOM manipulation, event handling, and real-time UI updates.",
     stack: ["HTML", "CSS", "JavaScript"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/forensickchemist/tip-calculator",
+    live: "https://fmc-tip-calculator.netlify.app/",
     icon: "🧾",
   },
   {
