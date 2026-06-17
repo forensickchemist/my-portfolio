@@ -1,0 +1,87 @@
+/* ─── GOOGLE FONTS ──────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+/* ─── TYPE SCALE ────────────────────────────────────────────────────────────── */
+:root {
+  --font-logo:    'IBM Plex Mono', monospace;
+  --font-heading: 'Manrope', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-label:   'IBM Plex Mono', monospace;
+  --font-code:    'IBM Plex Mono', monospace;
+
+  --text-display-xl: clamp(32px, 6vw, 64px);
+  --text-display-lg: clamp(26px, 5vw, 48px);
+  --text-heading-xl: clamp(22px, 3.5vw, 36px);
+  --text-heading-lg: clamp(18px, 2.8vw, 28px);
+  --text-heading-md: clamp(16px, 2vw, 22px);
+  --text-heading-sm: clamp(15px, 1.6vw, 18px);
+  --text-body-lg:    clamp(16px, 1.5vw, 18px);
+  --text-body-md:    15px;
+  --text-body-sm:    13px;
+  --text-body-xs:    12px;
+  --text-ui-md:      14px;
+  --text-ui-sm:      12px;
+  --text-label-lg:   11px;
+  --text-label-md:   10px;
+  --text-code-md:    13px;
+}
+
+/* ─── DARK THEME (default) ──────────────────────────────────────────────────── */
+:root, [data-theme="dark"] {
+  --color-teal:       #0FA3B1;
+  --color-deep-teal:  #0B6E79;
+  --color-soft-teal:  rgba(15,163,177,.15);
+  --color-gold:       #D4AF37;
+  --color-gold-bg:    rgba(212,175,55,.15);
+
+  --color-text-h:     #E5E7EB;
+  --color-text-body:  #CBD5E1;
+  --color-text-muted: #94A3B8;
+  --color-text-label: #0FA3B1;
+  --color-text-feat:  #D4AF37;
+  --color-text-link:  #0FA3B1;
+
+  --color-bg:         #0B1220;
+  --color-surface:    #111827;
+  --color-surface2:   #1E2A3A;
+  --color-border:     rgba(255,255,255,0.08);
+  --color-border-md:  rgba(255,255,255,0.12);
+  --nav-bg:           rgba(11,18,32,0.92);
+}
+
+/* ─── LIGHT THEME ───────────────────────────────────────────────────────────── */
+[data-theme="light"] {
+  --color-teal:       #0FA3B1;
+  --color-deep-teal:  #0B6E79;
+  --color-soft-teal:  #D9F3F6;
+  --color-gold:       #B8860B;
+  --color-gold-bg:    #F5E6A3;
+
+  --color-text-h:     #0F172A;
+  --color-text-body:  #1E293B;
+  --color-text-muted: #64748B;
+  --color-text-label: #0B6E79;
+  --color-text-feat:  #B8860B;
+  --color-text-link:  #0FA3B1;
+
+  --color-bg:         #F8FAFC;
+  --color-surface:    #FFFFFF;
+  --color-surface2:   #F3F4F6;
+  --color-border:     #E2E8F0;
+  --color-border-md:  #CBD5E1;
+  --nav-bg:           #0B6E79;
+}
+
+/* ─── RESET ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--color-bg);
+  color: var(--color-text-body);
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  line-height: 1.7;
+  transition: background 0.3s, color 0.3s;
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
